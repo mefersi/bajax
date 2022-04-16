@@ -1,0 +1,382 @@
+-------------------------------------------------------------------------------
+Test set: br.com.banco.bajax.runners.RunnerClienteTest
+-------------------------------------------------------------------------------
+Tests run: 36, Failures: 0, Errors: 18, Skipped: 18, Time elapsed: 1.082 sec <<< FAILURE!
+que crio um cliente válido(deve criar cliente com sucesso)  Time elapsed: 0.037 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step 'que crio um cliente válido' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Dado("que crio um cliente válido")
+public void queCrioUmClienteVálido() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Quando("imprimir o cliente")
+public void imprimirOCliente() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Então("as informações sobre ele são exibidas")
+public void asInformaçõesSobreEleSãoExibidas() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+deve criar cliente com sucesso  Time elapsed: 0.004 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step 'que crio um cliente válido' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Dado("que crio um cliente válido")
+public void queCrioUmClienteVálido() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Quando("imprimir o cliente")
+public void imprimirOCliente() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Então("as informações sobre ele são exibidas")
+public void asInformaçõesSobreEleSãoExibidas() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+que desejo criar um cliente(cliente inválido campos obrigatórios nulos #1)  Time elapsed: 0.002 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step 'que desejo criar um cliente' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Dado("que desejo criar um cliente")
+public void queDesejoCriarUmCliente() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Quando("adiciono o {string} como nulo")
+public void adicionoOComoNulo(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Então("recebo a mensagem de erro {string}")
+public void receboAMensagemDeErro(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+cliente inválido campos obrigatórios nulos #1  Time elapsed: 0.002 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step 'que desejo criar um cliente' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Dado("que desejo criar um cliente")
+public void queDesejoCriarUmCliente() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Quando("adiciono o {string} como nulo")
+public void adicionoOComoNulo(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Então("recebo a mensagem de erro {string}")
+public void receboAMensagemDeErro(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+que desejo criar um cliente(cliente inválido campos obrigatórios nulos #2)  Time elapsed: 0.001 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step 'que desejo criar um cliente' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Dado("que desejo criar um cliente")
+public void queDesejoCriarUmCliente() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Quando("adiciono o {string} como nulo")
+public void adicionoOComoNulo(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Então("recebo a mensagem de erro {string}")
+public void receboAMensagemDeErro(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+cliente inválido campos obrigatórios nulos #2  Time elapsed: 0.002 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step 'que desejo criar um cliente' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Dado("que desejo criar um cliente")
+public void queDesejoCriarUmCliente() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Quando("adiciono o {string} como nulo")
+public void adicionoOComoNulo(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Então("recebo a mensagem de erro {string}")
+public void receboAMensagemDeErro(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+que desejo criar um cliente(cliente inválido campos obrigatórios nulos #3)  Time elapsed: 0.002 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step 'que desejo criar um cliente' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Dado("que desejo criar um cliente")
+public void queDesejoCriarUmCliente() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Quando("adiciono o {string} como nulo")
+public void adicionoOComoNulo(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Então("recebo a mensagem de erro {string}")
+public void receboAMensagemDeErro(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+cliente inválido campos obrigatórios nulos #3  Time elapsed: 0.001 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step 'que desejo criar um cliente' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Dado("que desejo criar um cliente")
+public void queDesejoCriarUmCliente() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Quando("adiciono o {string} como nulo")
+public void adicionoOComoNulo(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Então("recebo a mensagem de erro {string}")
+public void receboAMensagemDeErro(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+que desejo criar um cliente(cliente inválido campos obrigatórios nulos #4)  Time elapsed: 0.001 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step 'que desejo criar um cliente' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Dado("que desejo criar um cliente")
+public void queDesejoCriarUmCliente() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Quando("adiciono o {string} como nulo")
+public void adicionoOComoNulo(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Então("recebo a mensagem de erro {string}")
+public void receboAMensagemDeErro(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+cliente inválido campos obrigatórios nulos #4  Time elapsed: 0.002 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step 'que desejo criar um cliente' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Dado("que desejo criar um cliente")
+public void queDesejoCriarUmCliente() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Quando("adiciono o {string} como nulo")
+public void adicionoOComoNulo(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Então("recebo a mensagem de erro {string}")
+public void receboAMensagemDeErro(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+que desejo criar um cliente(cliente inválido campos obrigatórios vazios)  Time elapsed: 0 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step 'que desejo criar um cliente' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Dado("que desejo criar um cliente")
+public void queDesejoCriarUmCliente() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Quando("adiciono o campo vazio")
+public void adicionoOCampoVazio() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Então("recebo a mensagem de erro")
+public void receboAMensagemDeErro() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+cliente inválido campos obrigatórios vazios  Time elapsed: 0.001 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step 'que desejo criar um cliente' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Dado("que desejo criar um cliente")
+public void queDesejoCriarUmCliente() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Quando("adiciono o campo vazio")
+public void adicionoOCampoVazio() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Então("recebo a mensagem de erro")
+public void receboAMensagemDeErro() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+que desejo criar um cliente(cliente inválido campos obrigatórios no formato inválido)  Time elapsed: 0.001 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step 'que desejo criar um cliente' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Dado("que desejo criar um cliente")
+public void queDesejoCriarUmCliente() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Quando("adiciono um campo no formato inválido")
+public void adicionoUmCampoNoFormatoInválido() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Então("recebo a mensagem de erro")
+public void receboAMensagemDeErro() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+cliente inválido campos obrigatórios no formato inválido  Time elapsed: 0.001 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step 'que desejo criar um cliente' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Dado("que desejo criar um cliente")
+public void queDesejoCriarUmCliente() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Quando("adiciono um campo no formato inválido")
+public void adicionoUmCampoNoFormatoInválido() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Então("recebo a mensagem de erro")
+public void receboAMensagemDeErro() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+que tenho um cliente válido(adicionar telefone no formato inválido)  Time elapsed: 0 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step 'que tenho um cliente válido' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Dado("que tenho um cliente válido")
+public void queTenhoUmClienteVálido() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Quando("adiciono um telefone no formato inválido")
+public void adicionoUmTelefoneNoFormatoInválido() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Então("recebo uma mensagem de erro")
+public void receboUmaMensagemDeErro() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+adicionar telefone no formato inválido  Time elapsed: 0 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step 'que tenho um cliente válido' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Dado("que tenho um cliente válido")
+public void queTenhoUmClienteVálido() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Quando("adiciono um telefone no formato inválido")
+public void adicionoUmTelefoneNoFormatoInválido() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Então("recebo uma mensagem de erro")
+public void receboUmaMensagemDeErro() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+que tenho um cliente válido(alterar campo ativo para nulo)  Time elapsed: 0.001 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step 'que tenho um cliente válido' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Dado("que tenho um cliente válido")
+public void queTenhoUmClienteVálido() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Quando("tento alterar o campo ativo para nulo")
+public void tentoAlterarOCampoAtivoParaNulo() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Então("recebo uma mensagem de erro")
+public void receboUmaMensagemDeErro() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+alterar campo ativo para nulo  Time elapsed: 0.001 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step 'que tenho um cliente válido' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Dado("que tenho um cliente válido")
+public void queTenhoUmClienteVálido() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Quando("tento alterar o campo ativo para nulo")
+public void tentoAlterarOCampoAtivoParaNulo() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Então("recebo uma mensagem de erro")
+public void receboUmaMensagemDeErro() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
