@@ -1,0 +1,14 @@
+br\com\banco\bajax\steps\ClienteSteps.class
+br\com\jaque\banco\bajax\main\Teste02ClienteService.class
+br\com\jaque\banco\bajax\test\ContaServiceTest.class
+br\com\banco\bajax\runners\RunnerClienteTest.class
+br\com\jaque\banco\bajax\test\BajaxTestesSuiteTest.class
+br\com\jaque\banco\bajax\test\ContaTest.class
+br\com\jaque\banco\bajax\main\Teste07Conta.class
+br\com\jaque\banco\bajax\test\ClienteTest.class
+br\com\jaque\banco\bajax\main\Teste04ContaPoupancaService.class
+br\com\jaque\banco\bajax\main\Teste03ContaCorrenteService.class
+br\com\jaque\banco\bajax\main\Teste06Endereco.class
+br\com\jaque\banco\bajax\main\Teste01Basico.class
+br\com\jaque\banco\bajax\main\Teste05Cliente.class
+br\com\jaque\banco\bajax\test\ClienteServiceTest.class

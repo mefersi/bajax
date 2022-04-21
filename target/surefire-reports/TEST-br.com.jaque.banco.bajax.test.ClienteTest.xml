@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="br.com.jaque.banco.bajax.test.ClienteTest" time="0.065" tests="59" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\jaque\OneDrive\Documentos\Estudos\Workspace\Eclipse\banco.bajax\target\test-classes;C:\Users\jaque\OneDrive\Documentos\Estudos\Workspace\Eclipse\banco.bajax\target\classes;C:\Users\jaque\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\jaque\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\jaque\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\jaque\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\jaque\.m2\repository\org\junit\platform\junit-platform-suite-engine\1.8.2\junit-platform-suite-engine-1.8.2.jar;C:\Users\jaque\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;C:\Users\jaque\.m2\repository\org\junit\platform\junit-platform-suite-api\1.8.2\junit-platform-suite-api-1.8.2.jar;C:\Users\jaque\.m2\repository\org\junit\platform\junit-platform-suite-commons\1.8.2\junit-platform-suite-commons-1.8.2.jar;C:\Users\jaque\.m2\repository\io\cucumber\cucumber-java\7.2.3\cucumber-java-7.2.3.jar;C:\Users\jaque\.m2\repository\io\cucumber\cucumber-core\7.2.3\cucumber-core-7.2.3.jar;C:\Users\jaque\.m2\repository\io\cucumber\cucumber-gherkin\7.2.3\cucumber-gherkin-7.2.3.jar;C:\Users\jaque\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.2.3\cucumber-gherkin-messages-7.2.3.jar;C:\Users\jaque\.m2\repository\io\cucumber\messages\17.1.1\messages-17.1.1.jar;C:\Users\jaque\.m2\repository\io\cucumber\tag-expressions\4.1.0\tag-expressions-4.1.0.jar;C:\Users\jaque\.m2\repository\io\cucumber\cucumber-expressions\15.0.1\cucumber-expressions-15.0.1.jar;C:\Users\jaque\.m2\repository\io\cucumber\datatable\7.2.3\datatable-7.2.3.jar;C:\Users\jaque\.m2\repository\io\cucumber\cucumber-plugin\7.2.3\cucumber-plugin-7.2.3.jar;C:\Users\jaque\.m2\repository\io\cucumber\docstring\7.2.3\docstring-7.2.3.jar;C:\Users\jaque\.m2\repository\io\cucumber\html-formatter\17.0.0\html-formatter-17.0.0.jar;C:\Users\jaque\.m2\repository\io\cucumber\ci-environment\8.1.0\ci-environment-8.1.0.jar;C:\Users\jaque\.m2\repository\io\cucumber\cucumber-junit\7.2.3\cucumber-junit-7.2.3.jar;C:\Users\jaque\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\jaque\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\jaque\.m2\repository\org\pitest\pitest\1.7.5\pitest-1.7.5.jar;C:\Users\jaque\.m2\repository\org\junit\platform\junit-platform-surefire-provider\1.3.2\junit-platform-surefire-provider-1.3.2.jar;C:\Users\jaque\.m2\repository\org\junit\platform\junit-platform-launcher\1.3.2\junit-platform-launcher-1.3.2.jar;C:\Users\jaque\.m2\repository\org\apache\maven\surefire\surefire-api\2.22.0\surefire-api-2.22.0.jar;C:\Users\jaque\.m2\repository\org\apache\maven\surefire\surefire-logger-api\2.22.0\surefire-logger-api-2.22.0.jar;C:\Users\jaque\.m2\repository\org\apache\maven\surefire\common-java5\2.22.0\common-java5-2.22.0.jar;C:\Users\jaque\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;"/>
+    <property name="java.vm.vendor" value="Azul Systems, Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://www.azulsystems.com/"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\zulu11.48.21-ca-jdk11.0.11-win_x64\bin"/>
+    <property name="sun.java.command" value="C:\Users\jaque\AppData\Local\Temp\surefire17315312803802892835\surefirebooter13299013939093852992.jar C:\Users\jaque\AppData\Local\Temp\surefire17315312803802892835 2022-04-17T12-35-16_528-jvmRun1 surefire5308295939176856591tmp surefire_016727264497215569489tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\jaque\OneDrive\Documentos\Estudos\Workspace\Eclipse\banco.bajax\target\test-classes;C:\Users\jaque\OneDrive\Documentos\Estudos\Workspace\Eclipse\banco.bajax\target\classes;C:\Users\jaque\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\jaque\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\jaque\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\jaque\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\jaque\.m2\repository\org\junit\platform\junit-platform-suite-engine\1.8.2\junit-platform-suite-engine-1.8.2.jar;C:\Users\jaque\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;C:\Users\jaque\.m2\repository\org\junit\platform\junit-platform-suite-api\1.8.2\junit-platform-suite-api-1.8.2.jar;C:\Users\jaque\.m2\repository\org\junit\platform\junit-platform-suite-commons\1.8.2\junit-platform-suite-commons-1.8.2.jar;C:\Users\jaque\.m2\repository\io\cucumber\cucumber-java\7.2.3\cucumber-java-7.2.3.jar;C:\Users\jaque\.m2\repository\io\cucumber\cucumber-core\7.2.3\cucumber-core-7.2.3.jar;C:\Users\jaque\.m2\repository\io\cucumber\cucumber-gherkin\7.2.3\cucumber-gherkin-7.2.3.jar;C:\Users\jaque\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.2.3\cucumber-gherkin-messages-7.2.3.jar;C:\Users\jaque\.m2\repository\io\cucumber\messages\17.1.1\messages-17.1.1.jar;C:\Users\jaque\.m2\repository\io\cucumber\tag-expressions\4.1.0\tag-expressions-4.1.0.jar;C:\Users\jaque\.m2\repository\io\cucumber\cucumber-expressions\15.0.1\cucumber-expressions-15.0.1.jar;C:\Users\jaque\.m2\repository\io\cucumber\datatable\7.2.3\datatable-7.2.3.jar;C:\Users\jaque\.m2\repository\io\cucumber\cucumber-plugin\7.2.3\cucumber-plugin-7.2.3.jar;C:\Users\jaque\.m2\repository\io\cucumber\docstring\7.2.3\docstring-7.2.3.jar;C:\Users\jaque\.m2\repository\io\cucumber\html-formatter\17.0.0\html-formatter-17.0.0.jar;C:\Users\jaque\.m2\repository\io\cucumber\ci-environment\8.1.0\ci-environment-8.1.0.jar;C:\Users\jaque\.m2\repository\io\cucumber\cucumber-junit\7.2.3\cucumber-junit-7.2.3.jar;C:\Users\jaque\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\jaque\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\jaque\.m2\repository\org\pitest\pitest\1.7.5\pitest-1.7.5.jar;C:\Users\jaque\.m2\repository\org\junit\platform\junit-platform-surefire-provider\1.3.2\junit-platform-surefire-provider-1.3.2.jar;C:\Users\jaque\.m2\repository\org\junit\platform\junit-platform-launcher\1.3.2\junit-platform-launcher-1.3.2.jar;C:\Users\jaque\.m2\repository\org\apache\maven\surefire\surefire-api\2.22.0\surefire-api-2.22.0.jar;C:\Users\jaque\.m2\repository\org\apache\maven\surefire\surefire-logger-api\2.22.0\surefire-logger-api-2.22.0.jar;C:\Users\jaque\.m2\repository\org\apache\maven\surefire\common-java5\2.22.0\common-java5-2.22.0.jar;C:\Users\jaque\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\jaque"/>
+    <property name="user.language" value="pt"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-04-20"/>
+    <property name="java.home" value="C:\Program Files\Java\zulu11.48.21-ca-jdk11.0.11-win_x64"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\jaque\OneDrive\Documentos\Estudos\Workspace\Eclipse\banco.bajax"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="jdk.vendor.version" value="Zulu11.48+21-CA"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\jaque\AppData\Local\Temp\surefire17315312803802892835\surefirebooter13299013939093852992.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.11+9-LTS"/>
+    <property name="user.name" value="jaque"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Zulu11.48+21-CA"/>
+    <property name="localRepository" value="C:\Users\jaque\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://www.azulsystems.com/support/"/>
+    <property name="java.io.tmpdir" value="C:\Users\jaque\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.11"/>
+    <property name="user.dir" value="C:\Users\jaque\OneDrive\Documentos\Estudos\Workspace\Eclipse\banco.bajax"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\zulu11.48.21-ca-jdk11.0.11-win_x64\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/zulu11.48.21-ca-jdk11.0.11-win_x64/bin/server;C:/Program Files/Java/zulu11.48.21-ca-jdk11.0.11-win_x64/bin;C:\Program Files\Java\zulu11.48.21-ca-jdk11.0.11-win_x64\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\zulu11.48.21-ca-jdk11.0.11-win_x64\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Program Files\Java\jdk1.8.0_221\bin;C:\Program Files\dotnet\;C:\Users\jaque\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\jaque\AppData\Local\Programs\Python\Python310\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Ruby25-x64\bin;C:\Users\jaque\AppData\Local\Microsoft\WindowsApps;C:\Tools\Cmeder\vendor\git-for-windows\usr\bin;C:\Users\jaque\.dotnet\tools;C:\Users\jaque\AppData\Local\atom\bin;C:\Users\jaque\AppData\Local\Microsoft\WindowsApps;C:\Tools\Apache Maven\apache-maven-3.8.4-bin\apache-maven-3.8.4\bin;C:\Tools\Drivers\chromedriver.exe;;C:\Users\jaque\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\jaque\OneDrive\Área de Trabalho;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Azul Systems, Inc."/>
+    <property name="java.vm.version" value="11.0.11+9-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="cpfInvalidoTamanhoMenorQueOMinimo" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0"/>
+  <testcase name="enderecoInvalidoEstadoNulo" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0"/>
+  <testcase name="enderecoInvalidoEstadoVazio" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0"/>
+  <testcase name="enderecoInvalidoCepTamanhoMenorQueOMinimo" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0"/>
+  <testcase name="enderecoInvalidoCepNulo" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0"/>
+  <testcase name="cpfInvalidoComLetras" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0"/>
+  <testcase name="enderecoInvalidoRuaCaracteresEspeciais" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0"/>
+  <testcase name="enderecoInvalidoPaisComCaracteresEspeciais" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0"/>
+  <testcase name="emailInvalidoVazio" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0"/>
+  <testcase name="cpfInvalidoVazio" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0"/>
+  <testcase name="enderecoInvalidoRuaVazio" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0"/>
+  <testcase name="emailInvalidoSóComLetras" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0"/>
+  <testcase name="cpfInvalidoNulo" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0"/>
+  <testcase name="enderecoInvalidoRuaNulo" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0"/>
+  <testcase name="enderecoInvalidoPaisNulo" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0"/>
+  <testcase name="emailInvalidoComCaracteresEspeciais" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0.001"/>
+  <testcase name="nomeInvalidoComNumeros" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0.005"/>
+  <testcase name="enderecoInvalidoBairroComCaracteresEspeciais" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0"/>
+  <testcase name="criaClienteInativoComSucesso" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0.004"/>
+  <testcase name="emailInvalidoComNumeros" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0.001"/>
+  <testcase name="enderecoInvalidoNumeroComCaracteresEspeciais" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0.001"/>
+  <testcase name="enderecoValidoCepTamanhoMaximo" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0.001"/>
+  <testcase name="nomeInvalidoVazio" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0"/>
+  <testcase name="nomeInvalidoComEspacos" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0"/>
+  <testcase name="nomeInvalidoComCarcateresEspeciais" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0.001"/>
+  <testcase name="telefoneIvalidoLetras" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0"/>
+  <testcase name="emailInvalidoComEspacos" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0.001"/>
+  <testcase name="enderecoValidoCepTamanhoMin" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0.001"/>
+  <testcase name="enderecoInvalidoRuaComEspacos" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0.002"/>
+  <testcase name="enderecoInvalidoBairroVazio" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0"/>
+  <testcase name="enderecoInvalidoBairroComEspacos" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0"/>
+  <testcase name="enderecoInvalidoCidadeComCaracteresEspeciais" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0"/>
+  <testcase name="enderecoInvalidoNumeroComEspacos" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0.001"/>
+  <testcase name="cpfInvalidoComEspacos" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0.001"/>
+  <testcase name="setAtivoNulo" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0.001"/>
+  <testcase name="enderecoInvalidoNumeroVazio" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0"/>
+  <testcase name="telefoneValido" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0.001"/>
+  <testcase name="enderecoInvalidoEstadoComCaracteresEspeciais" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0.001"/>
+  <testcase name="enderecoInvalidoPaisVazio" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0"/>
+  <testcase name="criaClienteAtivoComSucesso" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0"/>
+  <testcase name="enderecoInvalidoCidadeComEspacos" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0.001"/>
+  <testcase name="enderecoInvalidoCepComEspacos" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0"/>
+  <testcase name="nomeInvalidoNulo" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0"/>
+  <testcase name="enderecoValido" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0"/>
+  <testcase name="cpfInvalidoTamanhoMaiorQueOMaximo" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0.001"/>
+  <testcase name="enderecoInvalidoCidadeNulo" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0.001"/>
+  <testcase name="emailInvalidoNulo" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0.001"/>
+  <testcase name="enderecoInvalidoPaisComEspacos" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0.001"/>
+  <testcase name="enderecoInvalidoNumeroNulo" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0"/>
+  <testcase name="telefoneIvalidoCaracteresEspeciais" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0.001"/>
+  <testcase name="enderecoInvalidoCepTamanhoMaiorQueOMaximo" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0"/>
+  <testcase name="enderecoInvalidoCepVazio" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0.001"/>
+  <testcase name="enderecoInvalidoBairroNulo" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0.001"/>
+  <testcase name="cpfInvalidoComCaracteresEspeciais" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0.001"/>
+  <testcase name="enderecoInvalidoCepComCaracteresEspeciais" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0.001"/>
+  <testcase name="enderecoInvalidoEstadoComEspacos" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0.001"/>
+  <testcase name="cpfValidoTamanhoMaximo" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0"/>
+  <testcase name="cpfValidoTamanhoMinimo" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0"/>
+  <testcase name="enderecoInvalidoCidadeVazio" classname="br.com.jaque.banco.bajax.test.ClienteTest" time="0.001"/>
+</testsuite>
