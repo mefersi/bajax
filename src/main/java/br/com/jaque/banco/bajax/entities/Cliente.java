@@ -66,13 +66,13 @@ public class Cliente {
 			throw new DadosInvalidosException("Dados inválidos!");
 		}
 		if (!nome.matches("^[A-Za-zãáí\\s]*$")) {
-			throw new DadosInvalidosException("Nome inválido, tente novamente!");
+			throw new DadosInvalidosException("Nome inválido tente novamente!");
 		}
 		if (!email.matches("^[a-z0-9\\-\\.\\_]+@[a-z]+\\.[a-z]+(\\.[a-z]+)?$")) {
-			throw new DadosInvalidosException("Email inválido, tente novamente!");
+			throw new DadosInvalidosException("Email inválido tente novamente!");
 		}
 		if (!cpf.matches("^[0-9]{3}[\\.]?[\\/]?[-]?[0-9]{3}[\\.]?[\\/]?[-]?[0-9]{3}[\\.]?[\\/]?[-]?[0-9]{2}$"))	{
-			throw new DadosInvalidosException("CPF inválido, tente novamente!");
+			throw new DadosInvalidosException("CPF inválido tente novamente!");
 		}
 	}
 

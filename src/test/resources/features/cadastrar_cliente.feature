@@ -1,19 +1,26 @@
 #language: pt
-Funcionalidade: Cadastro de clientes
 
+@cliente
+Funcionalidade: Cadastro de clientes
 	Como um colaborador do banco bajax 
 	Eu quero cadastrar clientes
 	Para a criação de novas contas no banco
 	
 Cenário: deve criar cliente com sucesso
-	Dado que crio um cliente válido
-	Quando imprimir o cliente
-	Então as informações sobre ele são exibidas
+	Dado que possuo as informações válidas de um individuo
+	Quando crio um cliente com essas informações
+	Então o cliente é cadastrado com sucesso
 
-Esquema do Cenário: cliente inválido campos obrigatórios nulos
-	Dado que desejo criar um cliente
-	Quando adiciono o "<campo>" como nulo
-	Então recebo a mensagem de erro "<mensagem>"
+Cenário: cliente inválido campos obrigatórios nulos
+	Dado que possuo as informações para criar um cliente a partir da lista
+	| Yuri Azul | yuri@gmail.com | 123456789-11 | true |
+	# Quando adiciono o "<campo>" como nulo
+	# Então ao tentar criar o cliente recebo a mensagem de erro "<mensagem>"
+
+Esquema do Cenário: cliente inválido campos obrigatórios vazios
+	Dado que possuo as informações válidas de um individuo
+	Quando adiciono o "<campo>" vazio
+	Então ao tentar criar o cliente recebo a mensagem de erro "<mensagem>"
 	
 Exemplos:
 	|     campo      |       mensagem       |
@@ -22,15 +29,17 @@ Exemplos:
 	|     cpf        |   Dados inválidos!   |
 	|     ativo      |   Dados inválidos!   |
 
-Cenário: cliente inválido campos obrigatórios vazios
-	Dado que desejo criar um cliente
-	Quando adiciono o campo vazio
-	Então recebo a mensagem de erro
-
-Cenário: cliente inválido campos obrigatórios no formato inválido
-	Dado que desejo criar um cliente
-	Quando adiciono um campo no formato inválido
-	Então recebo a mensagem de erro
+Esquema do Cenário: cliente inválido campos obrigatórios no formato inválido
+	Dado que possuo as informações válidas de um individuo
+	Quando adiciono o "<campo>" no formato inválido
+	Então ao tentar criar o cliente recebo a mensagem de erro "<mensagem>"
+	
+Exemplos:
+	|     campo      |       mensagem       |
+	|     nome       |   Dados inválidos!   |
+	|     email      |   Dados inválidos!   |
+	|     cpf        |   Dados inválidos!   |
+	|     ativo      |   Dados inválidos!   |
 
 Cenário: adicionar telefone no formato inválido
 	Dado que tenho um cliente válido

@@ -15,9 +15,12 @@ public class Teste05Cliente {
 		Cliente c3 = new Cliente("Mario Fulano", "mario@gmail.com", "562.222.500-66", false);
 		System.out.println(c3);
 		
-		c3.setTelefone("abc");
+		//c3.setTelefone("abc");
 		
-		c2.setTelefone(null);
+		//c2.setTelefone(null);
+		
+		Cliente c4 = new Cliente("Mario Fulano", null, "562.222.500-66", true);
+		System.out.println(c4);
 		
 		
 	}

@@ -30,6 +30,8 @@ public class ClienteTest {
 	@Test
 	public void criaClienteAtivoComSucesso() {
 
+		Cliente cliente = new Cliente(nome, email, cpf, true);
+		
 		assertEquals(cliente.getNome(), nome);
 		assertEquals(cliente.getEmail(), email);
 		assertEquals(cliente.getCpf(), cpf);
@@ -95,7 +97,7 @@ public class ClienteTest {
 			Cliente cliente = new Cliente(nome, email, cpf, true);
 			fail();
 		} catch (DadosInvalidosException e) {
-			assertEquals("Nome inválido, tente novamente!", e.getMessage());
+			assertEquals("Nome inválido tente novamente!", e.getMessage());
 		}
 	}
 
@@ -108,7 +110,7 @@ public class ClienteTest {
 			Cliente cliente = new Cliente(nome, email, cpf, true);
 			fail();
 		} catch (DadosInvalidosException e) {
-			assertEquals("Nome inválido, tente novamente!", e.getMessage());
+			assertEquals("Nome inválido tente novamente!", e.getMessage());
 		}
 	}
 
@@ -160,7 +162,7 @@ public class ClienteTest {
 			Cliente cliente = new Cliente(nome, email, cpf, true);
 			fail();
 		} catch (DadosInvalidosException e) {
-			assertEquals("Email inválido, tente novamente!", e.getMessage());
+			assertEquals("Email inválido tente novamente!", e.getMessage());
 		}
 	}
 
@@ -173,7 +175,7 @@ public class ClienteTest {
 			Cliente cliente = new Cliente(nome, email, cpf, true);
 			fail();
 		} catch (DadosInvalidosException e) {
-			assertEquals("Email inválido, tente novamente!", e.getMessage());
+			assertEquals("Email inválido tente novamente!", e.getMessage());
 		}
 	}
 	
@@ -186,7 +188,7 @@ public class ClienteTest {
 			Cliente cliente = new Cliente(nome, email, cpf, true);
 			fail();
 		} catch (DadosInvalidosException e) {
-			assertEquals("Email inválido, tente novamente!", e.getMessage());
+			assertEquals("Email inválido tente novamente!", e.getMessage());
 		}
 	}
 
@@ -238,7 +240,7 @@ public class ClienteTest {
 			Cliente cliente = new Cliente(nome, email, cpf, true);
 			fail();
 		} catch (DadosInvalidosException e) {
-			assertEquals("CPF inválido, tente novamente!", e.getMessage());
+			assertEquals("CPF inválido tente novamente!", e.getMessage());
 		}
 	}
 
@@ -261,7 +263,7 @@ public class ClienteTest {
 			Cliente cliente = new Cliente(nome, email, cpf, true);
 			fail();
 		} catch (DadosInvalidosException e) {
-			assertEquals("CPF inválido, tente novamente!", e.getMessage());
+			assertEquals("CPF inválido tente novamente!", e.getMessage());
 		}
 	}
 	
@@ -284,7 +286,7 @@ public class ClienteTest {
 			Cliente cliente = new Cliente(nome, email, cpf, true);
 			fail();
 		} catch (DadosInvalidosException e) {
-			assertEquals("CPF inválido, tente novamente!", e.getMessage());
+			assertEquals("CPF inválido tente novamente!", e.getMessage());
 		}
 	}
 	
@@ -297,7 +299,7 @@ public class ClienteTest {
 			Cliente cliente = new Cliente(nome, email, cpf, true);
 			fail();
 		} catch (DadosInvalidosException e) {
-			assertEquals("CPF inválido, tente novamente!", e.getMessage());
+			assertEquals("CPF inválido tente novamente!", e.getMessage());
 		}
 	}
 
