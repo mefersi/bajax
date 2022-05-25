@@ -6,7 +6,6 @@ import static org.junit.jupiter.api.Assertions.fail;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import br.com.jaque.banco.bajax.entities.Cliente;
@@ -15,20 +14,9 @@ import br.com.jaque.banco.bajax.services.ClienteService;
 
 public class ClienteServiceTest {
 
-//		
-//		Conta c3 = new ContaCorrente(123, 12345, new Cliente("Regina Amarela", "regina@gmail.com", "123.456.789-10", true), true);
-//		Conta c4 = new ContaCorrente(123, 12345, new Cliente("Ramona Preta", "ramona@gmail.com", "123.456.789-10", true), false);
-//		Conta c5 = new ContaCorrente(123, 12345, new Cliente("Gnosaji Cinza", "gnoasaji@gmail.com", "123.456.789-10", true), false);
-
-//		Cliente c1 = new Cliente("Yuri Azul", "yuri@gmail.com", "123.456.789-10", true);
-//		Cliente c2 = new Cliente("Julia Rosa", "julia@gmail.com", "123.456.789-11", true);
-//		Cliente c3 = new Cliente("Regina Amarela", "regina@gmail.com", "123.456.789-12", true);
-//		Cliente c4 = new Cliente("Ramona Preta", "ramona@gmail.com", "123.456.789-13", false);
-//		Cliente c5 = new Cliente("Gnosaji Cinza", "gnoasaji@gmail.com", "123.456.789-14", false);
-	
 	Cliente c1 = new Cliente("Yuri Azul", "yuri@gmail.com", "123.456.789-10", true);
 	Cliente c2 = new Cliente("Julia Rosa", "julia@gmail.com", "123.456.789.11", false);
-	
+
 	@Test
 	public void pesquisaClienteAtivoComSucesso() {
 
@@ -50,6 +38,7 @@ public class ClienteServiceTest {
 
 		assertEquals(clienteService.pesquisaCliente(c2.getCpf()), c2);
 	}
+
 	@Test
 	public void pesquisaClienteCpfNulo() {
 
@@ -97,7 +86,7 @@ public class ClienteServiceTest {
 			assertEquals("CPF inválido!", e.getMessage());
 		}
 	}
-	
+
 	@Test
 	public void pesquisaClienteCpfComCaracteresEspeciais() {
 
@@ -164,28 +153,28 @@ public class ClienteServiceTest {
 		List<Cliente> listaClientes = new ArrayList<>();
 
 		ClienteService clienteService = new ClienteService(listaClientes);
-		
+
 		assertEquals(clienteService.adicionaCliente(c1), "Cliente adicionado com sucesso!");
 	}
-	
+
 	@Test
 	public void adicionaClienteInativoComSucesso() {
 
 		List<Cliente> listaClientes = new ArrayList<>();
 
 		ClienteService clienteService = new ClienteService(listaClientes);
-		
+
 		assertEquals(clienteService.adicionaCliente(c2), "Cliente adicionado com sucesso!");
 	}
-	
-	@Test 
+
+	@Test
 	public void adicionaClienteNulo() {
-		
+
 		List<Cliente> listaClientes = new ArrayList<>();
 		listaClientes.add(c1);
 
 		ClienteService clienteService = new ClienteService(listaClientes);
-		
+
 		try {
 			clienteService.adicionaCliente(null);
 			fail();
@@ -204,7 +193,7 @@ public class ClienteServiceTest {
 
 		assertEquals(clienteService.removeCliente(c1.getCpf()), "Cliente removido com sucesso!");
 	}
-	
+
 	@Test
 	public void removeClienteInativoComSucesso() {
 
@@ -215,7 +204,6 @@ public class ClienteServiceTest {
 
 		assertEquals(clienteService.removeCliente(c2.getCpf()), "Cliente removido com sucesso!");
 	}
-
 
 	@Test
 	public void removeClienteCpfNulo() {
@@ -248,7 +236,7 @@ public class ClienteServiceTest {
 			assertEquals("CPF inválido!", e.getMessage());
 		}
 	}
-	
+
 	@Test
 	public void removeClienteCpfComEspacos() {
 
@@ -264,7 +252,7 @@ public class ClienteServiceTest {
 			assertEquals("CPF inválido!", e.getMessage());
 		}
 	}
-	
+
 	@Test
 	public void removeClienteCpfComCaracteresEspeciais() {
 
@@ -280,7 +268,7 @@ public class ClienteServiceTest {
 			assertEquals("CPF inválido!", e.getMessage());
 		}
 	}
-	
+
 	@Test
 	public void removeClienteCpfNaoEncontrado() {
 
@@ -291,7 +279,7 @@ public class ClienteServiceTest {
 
 		assertEquals(clienteService.removeCliente("123.456.789-16"), "Cliente não encontrado");
 	}
-	
+
 	@Test
 	public void verificaClienteAtivoComSucesso() {
 
@@ -302,7 +290,7 @@ public class ClienteServiceTest {
 
 		assertEquals(clienteService.verificaCliente(c1.getCpf()), "Cliente ativo");
 	}
-	
+
 	@Test
 	public void verificaClienteInativoComSucesso() {
 
@@ -314,7 +302,7 @@ public class ClienteServiceTest {
 
 		assertEquals(clienteService.verificaCliente(c2.getCpf()), "Cliente inativo");
 	}
-	
+
 	@Test
 	public void verificaClienteCpfNulo() {
 
@@ -330,7 +318,7 @@ public class ClienteServiceTest {
 			assertEquals("CPF inválido!", e.getMessage());
 		}
 	}
-	
+
 	@Test
 	public void verificaClienteCpfVazio() {
 
@@ -346,7 +334,7 @@ public class ClienteServiceTest {
 			assertEquals("CPF inválido!", e.getMessage());
 		}
 	}
-	
+
 	@Test
 	public void verificaClienteCpfComEspacos() {
 
@@ -362,7 +350,7 @@ public class ClienteServiceTest {
 			assertEquals("CPF inválido!", e.getMessage());
 		}
 	}
-	
+
 	@Test
 	public void verificaClienteCpfComCaracteresEspeciais() {
 
@@ -378,7 +366,7 @@ public class ClienteServiceTest {
 			assertEquals("CPF inválido!", e.getMessage());
 		}
 	}
-	
+
 	@Test
 	public void limpaListaComSucesso() {
 
@@ -386,7 +374,7 @@ public class ClienteServiceTest {
 		listaClientes.add(c1);
 
 		ClienteService clienteService = new ClienteService(listaClientes);
-		
+
 		assertEquals(clienteService.limparLista(), "Lista limpa com sucesso!");
 	}
 }

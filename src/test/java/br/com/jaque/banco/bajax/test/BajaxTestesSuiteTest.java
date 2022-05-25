@@ -8,5 +8,4 @@ import org.junit.platform.suite.api.SuiteDisplayName;
 @Suite
 @SuiteDisplayName("Todos os testes do banco Bajax")
 public class BajaxTestesSuiteTest {
-
 }

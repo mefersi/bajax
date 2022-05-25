@@ -51,15 +51,11 @@ public class ClienteSteps {
 	public void quePossuoAsInformaçõesParaCriarUmClienteAPartirDaLista(DataTable dataTable) {
 
 		List<List<String>> rows = dataTable.asLists(String.class);
-		
-		for(List<String> row : rows) {
+
+		for (List<String> row : rows) {
 			System.out.println(row.get(0));
 		}
-		
-		
-		
-		
-		
+
 		clientes = dataTable.asList();
 		System.out.println(clientes);
 
@@ -75,20 +71,18 @@ public class ClienteSteps {
 
 	@Quando("adiciono um campo como nulo")
 	public void adicionoUmCampoComoNulo(io.cucumber.datatable.DataTable dataTable) {
-		
+
 		linhas = dataTable.asMaps(String.class, String.class);
 		for (Map<String, String> colunas : linhas) {
 			Cliente c2 = new Cliente(colunas.get("nome"), colunas.get("email"), colunas.get("cpf"),
 					Boolean.valueOf(colunas.get("ativo")));
 		}
-		
+
 	}
 
 	@Então("ao tentar criar o cliente recebo uma mensagem de erro")
 	public void aoTentarCriarOClienteReceboUmaMensagemDeErro() {
-		
-		
-	    System.out.println("jaque");
-	}
 
+		System.out.println("jaque");
+	}
 }

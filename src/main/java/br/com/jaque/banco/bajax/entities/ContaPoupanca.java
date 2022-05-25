@@ -8,10 +8,10 @@ public class ContaPoupanca extends Conta {
 
 	@Override
 	public String saca(Double valor) {
+		verificaValor(valor);
 		if (getAtiva() == false) {
 			throw new DadosInvalidosException("Falha na transação: conta inativa não pode realizar operações!");
 		}
-		verificaValor(valor);
 		if (valor > saldo) {
 			throw new DadosInvalidosException("Saldo insuficiente!");
 		}
@@ -21,10 +21,10 @@ public class ContaPoupanca extends Conta {
 
 	@Override
 	public String transfere(Double valor, Conta destino) {
+		verificaValor(valor);
 		if (getAtiva() == false) {
 			throw new DadosInvalidosException("Falha na transação: conta inativa não pode realizar operações!");
 		}
-		verificaValor(valor);
 		if (valor > saldo) {
 			throw new DadosInvalidosException("Saldo insuficiente!");
 		}

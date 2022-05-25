@@ -12,11 +12,15 @@ public class ClienteService {
 	public ClienteService(List<Cliente> clientesDoBanco) {
 		this.clientesDoBanco = clientesDoBanco;
 	}
-	
+
 	public List<Cliente> getClientesDoBanco() {
 		return clientesDoBanco;
 	}
-	
+
+//	public Object pesquisaCliente(String cpf) {
+//		Stream<Cliente> cliente = clientesDoBanco.stream().filter(c -> c.getCpf() == cpf);
+//	}
+
 	public Object pesquisaCliente(String cpf) {
 		if (!validaCpf(cpf)) {
 			throw new DadosInvalidosException("CPF inválido!");
@@ -28,7 +32,7 @@ public class ClienteService {
 		}
 		return "Cliente não encontrado!";
 	}
-	
+
 	public String adicionaCliente(Cliente novoCliente) {
 		if (novoCliente == null) {
 			throw new DadosInvalidosException("Cliente não deve ser nulo!");
@@ -36,7 +40,7 @@ public class ClienteService {
 		clientesDoBanco.add(novoCliente);
 		return "Cliente adicionado com sucesso!";
 	}
-	
+
 	public String removeCliente(String cpf) {
 		if (!validaCpf(cpf)) {
 			throw new DadosInvalidosException("CPF inválido!");
@@ -49,7 +53,7 @@ public class ClienteService {
 		}
 		return "Cliente não encontrado";
 	}
-	
+
 	public String verificaCliente(String cpf) {
 		if (!validaCpf(cpf)) {
 			throw new DadosInvalidosException("CPF inválido!");
@@ -63,12 +67,12 @@ public class ClienteService {
 		}
 		return "Cliente não encontrado";
 	}
-	
+
 	public String limparLista() {
 		clientesDoBanco.clear();
 		return "Lista limpa com sucesso!";
 	}
-	
+
 	public boolean validaCpf(String cpf) {
 		if (cpf == null || cpf.isEmpty() || cpf.trim().isEmpty()) {
 			return false;

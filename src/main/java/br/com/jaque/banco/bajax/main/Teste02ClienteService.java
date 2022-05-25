@@ -23,20 +23,19 @@ public class Teste02ClienteService {
 
 		System.out.println(clienteService.pesquisaCliente("123.456.789.14"));
 		System.out.println();
-		
+
 		Cliente cliente4 = new Cliente("Regina", "regina@gmail.com", "123.456.789.13", true);
 		System.out.println(clienteService.adicionaCliente(cliente4));
 		listaClientes.forEach(c -> System.out.println(c));
 		System.out.println();
-		
+
 		System.out.println(clienteService.removeCliente("123.456.789.12"));
 		listaClientes.forEach(c -> System.out.println(c));
 		System.out.println();
-		
+
 		System.out.println(clienteService.verificaCliente("123.456.789.10"));
 		System.out.println();
-		
+
 		System.out.println(clienteService.verificaCliente("123.456.789.11"));
-		
 	}
 }

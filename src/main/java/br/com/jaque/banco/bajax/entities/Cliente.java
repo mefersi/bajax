@@ -34,8 +34,8 @@ public class Cliente {
 	}
 
 	public String setTelefone(String telefone) {
-		if (!telefone.matches("^[0-9\\(\\)\\-\\s]*$")) {
-			throw new DadosInvalidosException("Dado inválido!");
+		if (telefone == null || !telefone.matches("^[0-9\\(\\)\\-\\s]*$")) {
+			throw new DadosInvalidosException("Telefone inválido tente novamente!");
 		}
 		this.telefone = telefone;
 		return "Telefone adicionado com sucesso!";
@@ -52,7 +52,7 @@ public class Cliente {
 	public Boolean getAtivo() {
 		return ativo;
 	}
-	
+
 	public void setAtivo(Boolean ativo) {
 		if (ativo == null) {
 			throw new DadosInvalidosException("Campos obrigatórios não devem ser nulos!");
@@ -61,8 +61,8 @@ public class Cliente {
 	}
 
 	public void validaCliente(String nome, String email, String cpf, Boolean ativo) {
-		if (nome == null || email == null || cpf == null || ativo == null || nome.isEmpty() || email.isEmpty() || cpf.isEmpty()
-				|| nome.trim().isEmpty() || email.trim().isEmpty() || cpf.trim().isEmpty()) {
+		if (nome == null || email == null || cpf == null || ativo == null || nome.isEmpty() || email.isEmpty()
+				|| cpf.isEmpty() || nome.trim().isEmpty() || email.trim().isEmpty() || cpf.trim().isEmpty()) {
 			throw new DadosInvalidosException("Dados inválidos!");
 		}
 		if (!nome.matches("^[A-Za-zãáí\\s]*$")) {
@@ -71,7 +71,7 @@ public class Cliente {
 		if (!email.matches("^[a-z0-9\\-\\.\\_]+@[a-z]+\\.[a-z]+(\\.[a-z]+)?$")) {
 			throw new DadosInvalidosException("Email inválido tente novamente!");
 		}
-		if (!cpf.matches("^[0-9]{3}[\\.]?[\\/]?[-]?[0-9]{3}[\\.]?[\\/]?[-]?[0-9]{3}[\\.]?[\\/]?[-]?[0-9]{2}$"))	{
+		if (!cpf.matches("^[0-9]{3}[\\.]?[\\/]?[-]?[0-9]{3}[\\.]?[\\/]?[-]?[0-9]{3}[\\.]?[\\/]?[-]?[0-9]{2}$")) {
 			throw new DadosInvalidosException("CPF inválido tente novamente!");
 		}
 	}
@@ -80,5 +80,4 @@ public class Cliente {
 	public String toString() {
 		return nome + ", email = " + email + ", cpf = " + cpf + ", cliente ativo = " + ativo;
 	}
-
 }

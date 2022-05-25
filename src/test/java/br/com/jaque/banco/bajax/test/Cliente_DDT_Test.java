@@ -7,14 +7,12 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
 import br.com.jaque.banco.bajax.entities.Cliente;
-import br.com.jaque.banco.bajax.entities.DadosInvalidosException;
 
 public class Cliente_DDT_Test {
 
 	@ParameterizedTest
 	@CsvFileSource(files = "src/test/resources/csv/cliente.csv", useHeadersInDisplayName = true)
-	public void deveDarErroDadosInvalidos(String nome, String email, String cpf, boolean se_ativo,
-			String resultado) {
+	public void deveDarErroDadosInvalidos(String nome, String email, String cpf, boolean se_ativo, String resultado) {
 		try {
 			Cliente cliente = new Cliente(nome, email, cpf, se_ativo);
 			fail();
@@ -23,7 +21,4 @@ public class Cliente_DDT_Test {
 			assertEquals(resultado, e.getMessage());
 		}
 	}
-	
-	
-	
 }

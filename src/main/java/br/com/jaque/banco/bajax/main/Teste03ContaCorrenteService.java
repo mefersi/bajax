@@ -24,22 +24,22 @@ public class Teste03ContaCorrenteService {
 		listaContas.add(conta1);
 		listaContas.add(conta2);
 		listaContas.add(conta3);
-		
+
 		ContaService contaService = new ContaService(listaContas);
-	
+
 		System.out.println(contaService.pesquisaConta(1111111, 1111111));
-		
+
 		Cliente cliente4 = new Cliente("Regina", "regina@gmail.com", "123.456.789.13", true);
-		ContaCorrente conta4 = new ContaCorrente(1111111, 4444444, cliente4, true, 2500.00, 2000.0, 1500.0); 
-		
+		ContaCorrente conta4 = new ContaCorrente(1111111, 4444444, cliente4, true, 2500.00, 2000.0, 1500.0);
+
 		System.out.println(contaService.adicionaConta(conta4));
 		listaContas.forEach(c -> System.out.println(c));
-	
+
 		System.out.println(contaService.removeConta(1111111, 3333333));
 		listaContas.forEach(c -> System.out.println(c));
-		
+
 		System.out.println(contaService.verificaConta(1111111, 2222222));
-		
+
 		System.out.println(contaService.verificaConta(1111111, 1111111));
 	}
 }

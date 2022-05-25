@@ -10,15 +10,7 @@ public abstract class Conta {
 	private static int totalContasCriadas;
 
 	public Conta(Integer agencia, Integer numero, Cliente titular, Boolean ativa) {
-		if (agencia <= 0 || numero <= 0) {
-			throw new DadosInvalidosException("Valor inválido!");
-		}
-		if (titular == null || ativa == null) {
-			throw new DadosInvalidosException("Campos obrigatórios não devem ser nulos!");
-		}
-		if (titular.getAtivo() == false) {
-			throw new DadosInvalidosException("Falha na criação da conta: titular deve ser um cliente ativo!");
-		}
+		verificaDados(agencia, numero, titular, ativa);
 		this.agencia = agencia;
 		this.numero = numero;
 		this.saldo = 0.0;
@@ -46,7 +38,7 @@ public abstract class Conta {
 	public Boolean getAtiva() {
 		return ativa;
 	}
-	
+
 	public void setAtiva(Boolean ativa) {
 		if (ativa == null) {
 			throw new DadosInvalidosException("Campos obrigatórios não devem ser nulos!");
@@ -59,7 +51,7 @@ public abstract class Conta {
 	}
 
 	public String deposita(Double valor) {
-		if (ativa == false) {
+		if (this.ativa == false) {
 			throw new DadosInvalidosException("Falha na transação: conta inativa não pode realizar operações!");
 		}
 		verificaValor(valor);
@@ -70,19 +62,31 @@ public abstract class Conta {
 	public abstract String saca(Double valor);
 
 	public abstract String transfere(Double valor, Conta destino);
-	
+
+	private void verificaDados(Integer agencia, Integer numero, Cliente titular, Boolean ativa) {
+		if (agencia <= 0 || numero <= 0) {
+			throw new DadosInvalidosException("Valor inválido!");
+		}
+		if (titular == null || ativa == null) {
+			throw new DadosInvalidosException("Campos obrigatórios não devem ser nulos!");
+		}
+		if (titular.getAtivo() == false) {
+			throw new DadosInvalidosException("Falha na criação da conta: titular deve ser um cliente ativo!");
+		}
+	}
+
 	public void verificaValor(Double valor) {
 		if (valor == null) {
 			throw new DadosInvalidosException("Campos obrigatórios não devem ser nulos!");
 		}
-		if (valor <= 0) {
+		if (valor <= 0 || valor <= 0) {
 			throw new DadosInvalidosException("Valor inválido!");
 		}
 	}
 
 	@Override
 	public String toString() {
-		return "DADOS DA CONTA: " + "\nTitular: " + getTitular() + "\nagencia: " + getAgencia()
-		+ ", número: " + getNumero() + ", saldo: " + getSaldo();
+		return "DADOS DA CONTA: " + "\nTitular: " + getTitular() + "\nagencia: " + getAgencia() + ", número: "
+				+ getNumero() + ", saldo: " + getSaldo();
 	}
 }

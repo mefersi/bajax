@@ -12,11 +12,11 @@ public class ContaService {
 	public ContaService(List<Conta> listaContas) {
 		this.listaContas = listaContas;
 	}
-	
+
 	public List<Conta> getListaContas() {
 		return listaContas;
 	}
-	
+
 	public Object pesquisaConta(int agencia, int numero) {
 		validaAgenciaNumero(agencia, numero);
 		for (Conta conta : listaContas) {
@@ -26,7 +26,7 @@ public class ContaService {
 		}
 		return "Conta não encontrada!";
 	}
-	
+
 	public String adicionaConta(Conta conta) {
 		if (conta == null) {
 			throw new DadosInvalidosException("Conta destino não deve ser nula!");
@@ -34,7 +34,7 @@ public class ContaService {
 		listaContas.add(conta);
 		return "Conta adicionada com sucesso";
 	}
-	
+
 	public String removeConta(int agencia, int numero) {
 		validaAgenciaNumero(agencia, numero);
 		for (Conta c : listaContas) {
@@ -45,7 +45,7 @@ public class ContaService {
 		}
 		return "Conta não encontrada";
 	}
-	
+
 	public String verificaConta(int agencia, int numero) {
 		validaAgenciaNumero(agencia, numero);
 		for (Conta c : listaContas) {
@@ -57,7 +57,7 @@ public class ContaService {
 		}
 		return "Conta não encontrada";
 	}
-	
+
 	public void validaAgenciaNumero(int agencia, int numero) {
 		if (agencia <= 0 || numero <= 0) {
 			throw new DadosInvalidosException("Dados inválidos!");

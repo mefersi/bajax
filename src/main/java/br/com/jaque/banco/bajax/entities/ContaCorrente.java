@@ -9,7 +9,7 @@ public class ContaCorrente extends Conta {
 	public ContaCorrente(Integer agencia, Integer numero, Cliente titular, Boolean ativa, Double limiteSaque,
 			Double chequeEspecial, Double limiteTransferencia) {
 		super(agencia, numero, titular, ativa);
-		validaLimitesEChequeEspecial(limiteSaque, chequeEspecial, limiteTransferencia);
+		validaAtributos(limiteSaque, chequeEspecial, limiteTransferencia);
 		this.limiteSaque = limiteSaque;
 		this.chequeEspecial = chequeEspecial;
 		this.limiteTransferencia = limiteTransferencia;
@@ -20,6 +20,9 @@ public class ContaCorrente extends Conta {
 	}
 
 	public String setLimiteSaque(Double limiteSaque) {
+		if (limiteSaque == null) {
+			throw new DadosInvalidosException("Campos obrigatórios não devem ser nulos!");
+		}
 		verificaValor(limiteSaque);
 		this.limiteSaque = limiteSaque;
 		return "Limite de saque definido de sucesso";
@@ -30,6 +33,9 @@ public class ContaCorrente extends Conta {
 	}
 
 	public String setChequeEspecial(Double chequeEspecial) {
+		if (chequeEspecial == null) {
+			throw new DadosInvalidosException("Campos obrigatórios não devem ser nulos!");
+		}
 		verificaValor(chequeEspecial);
 		this.chequeEspecial = chequeEspecial;
 		return "Cheque especial definido com sucesso!";
@@ -40,6 +46,9 @@ public class ContaCorrente extends Conta {
 	}
 
 	public String setLimiteTransferencia(Double limiteTransferencia) {
+		if (limiteTransferencia == null) {
+			throw new DadosInvalidosException("Campos obrigatórios não devem ser nulos!");
+		}
 		verificaValor(limiteTransferencia);
 		this.limiteTransferencia = limiteTransferencia;
 		return "Limite de transferência definido com sucesso";
@@ -47,34 +56,24 @@ public class ContaCorrente extends Conta {
 
 	@Override
 	public String saca(Double valor) {
-		if (getAtiva() == false) {
+		verificaValor(valor);
+		if (this.getAtiva() == false) {
 			throw new DadosInvalidosException("Falha na transação: conta inativa não pode realizar operações!");
 		}
-		verificaValor(valor);
 		if (valor > limiteSaque) {
-			throw new DadosInvalidosException(
-					"Falha ao sacar: Valor inválido, valor maior do que o limite de saque!");
+			throw new DadosInvalidosException("Falha ao sacar: Valor inválido, valor maior do que o limite de saque!");
 		}
 		if (valor > chequeEspecial) {
-			throw new DadosInvalidosException(
-					"Falha ao sacar: Valor inválido, valor maior do que o cheque especial!");
+			throw new DadosInvalidosException("Falha ao sacar: Valor inválido, valor maior do que o cheque especial!");
 		}
 		saldo -= valor;
 		return "Saque realizado com sucesso!";
 	}
 
 	public String transfere(Double valor, Conta destino) {
+		verificaValor(valor);
 		if (getAtiva() == false) {
 			throw new DadosInvalidosException("Falha na transação: conta inativa não pode realizar operações!");
-		}
-		verificaValor(valor);
-		if (valor > limiteTransferencia) {
-			throw new DadosInvalidosException(
-					"Falha ao transferir: valor maior que o limite de transferência!");
-		}
-		if (valor > chequeEspecial) {
-			throw new DadosInvalidosException(
-					"Falha ao transferir: valor maior que o cheque especial!");
 		}
 		if (destino == null) {
 			throw new DadosInvalidosException("Conta destino não deve ser nula!");
@@ -82,12 +81,18 @@ public class ContaCorrente extends Conta {
 		if (destino.getAtiva() == false) {
 			throw new DadosInvalidosException("Falha na transação: conta destino inativa!");
 		}
+		if (valor > limiteTransferencia) {
+			throw new DadosInvalidosException("Falha ao transferir: valor maior que o limite de transferência!");
+		}
+		if (valor > chequeEspecial) {
+			throw new DadosInvalidosException("Falha ao transferir: valor maior que o cheque especial!");
+		}
 		this.saca(valor);
 		destino.deposita(valor);
 		return "Transferência realizado com sucesso";
 	}
 
-	public void validaLimitesEChequeEspecial(Double limiteSaque, Double chequeEspecial, Double limiteTransferencia) {
+	private void validaAtributos(Double limiteSaque, Double chequeEspecial, Double limiteTransferencia) {
 		if (limiteSaque == null || chequeEspecial == null || limiteTransferencia == null) {
 			throw new DadosInvalidosException("Campos obrigatórios não devem ser nulos!");
 		}
@@ -97,7 +102,6 @@ public class ContaCorrente extends Conta {
 	}
 
 	public Double calculaChequeEspecial() {
-
 		double valor = -getChequeEspecial();
 		return valor;
 	}

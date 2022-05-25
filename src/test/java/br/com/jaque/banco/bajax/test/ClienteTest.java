@@ -16,9 +16,9 @@ public class ClienteTest {
 	String nome = "Yuri Azul";
 	String email = "yuri@gmail.com";
 	String cpf = "789456123-90";
-	
+
 	Cliente cliente = new Cliente(nome, email, cpf, true);
-	
+
 	String rua = "Rua Oliveiras";
 	String numero = "77A";
 	String bairro = "Laranjeiras";
@@ -26,12 +26,12 @@ public class ClienteTest {
 	String cidade = "Lua";
 	String estado = "São Paulo";
 	String pais = "Brasil";
-	
+
 	@Test
 	public void criaClienteAtivoComSucesso() {
 
 		Cliente cliente = new Cliente(nome, email, cpf, true);
-		
+
 		assertEquals(cliente.getNome(), nome);
 		assertEquals(cliente.getEmail(), email);
 		assertEquals(cliente.getCpf(), cpf);
@@ -155,7 +155,7 @@ public class ClienteTest {
 
 	@Test
 	public void emailInvalidoComNumeros() {
-		
+
 		email = "123";
 
 		try {
@@ -178,7 +178,7 @@ public class ClienteTest {
 			assertEquals("Email inválido tente novamente!", e.getMessage());
 		}
 	}
-	
+
 	@Test
 	public void emailInvalidoSóComLetras() {
 
@@ -256,7 +256,7 @@ public class ClienteTest {
 
 	@Test
 	public void cpfInvalidoTamanhoMaiorQueOMaximo() {
-		
+
 		cpf = "123.456.789-101";
 
 		try {
@@ -266,7 +266,7 @@ public class ClienteTest {
 			assertEquals("CPF inválido tente novamente!", e.getMessage());
 		}
 	}
-	
+
 	@Test
 	public void cpfValidoTamanhoMinimo() {
 
@@ -276,7 +276,7 @@ public class ClienteTest {
 
 		assertEquals(cliente.getCpf(), cpf);
 	}
-	
+
 	@Test
 	public void cpfInvalidoTamanhoMenorQueOMinimo() {
 
@@ -289,7 +289,7 @@ public class ClienteTest {
 			assertEquals("CPF inválido tente novamente!", e.getMessage());
 		}
 	}
-	
+
 	@Test
 	public void cpfInvalidoComCaracteresEspeciais() {
 
@@ -307,7 +307,7 @@ public class ClienteTest {
 	public void telefoneValido() {
 
 		Cliente cliente = new Cliente(nome, email, cpf, true);
-		
+
 		assertEquals(cliente.setTelefone("(11)952485080"), "Telefone adicionado com sucesso!");
 	}
 
@@ -318,10 +318,10 @@ public class ClienteTest {
 			cliente.setTelefone("abc");
 			fail();
 		} catch (DadosInvalidosException e) {
-			assertEquals("Dado inválido!", e.getMessage());
+			assertEquals("Telefone inválido tente novamente!", e.getMessage());
 		}
 	}
-	
+
 	@Test
 	public void telefoneIvalidoCaracteresEspeciais() {
 
@@ -329,20 +329,20 @@ public class ClienteTest {
 			cliente.setTelefone("@");
 			fail();
 		} catch (DadosInvalidosException e) {
-			assertEquals("Dado inválido!", e.getMessage());
+			assertEquals("Telefone inválido tente novamente!", e.getMessage());
 		}
 	}
-	
-//	@Test
-//	public void telefoneIvalidoNulo() {
-//
-//		try {
-//			cliente.setTelefone(null);
-//			fail();
-//		} catch (DadosInvalidosException e) {
-//			assertEquals("Telefone não deve ser nulo!", e.getMessage());
-//		}
-//	}
+
+	@Test
+	public void telefoneIvalidoNulo() {
+
+		try {
+			cliente.setTelefone(null);
+			fail();
+		} catch (DadosInvalidosException e) {
+			assertEquals("Telefone inválido tente novamente!", e.getMessage());
+		}
+	}
 
 	@Test
 	public void enderecoValido() {
@@ -379,7 +379,7 @@ public class ClienteTest {
 	public void enderecoInvalidoRuaVazio() {
 
 		rua = "";
-		
+
 		try {
 			Endereco endereco = new Endereco(rua, numero, bairro, cep, cidade, estado, pais);
 			cliente.setEndereco(endereco);
@@ -477,7 +477,7 @@ public class ClienteTest {
 	public void enderecoInvalidoBairroNulo() {
 
 		bairro = null;
-		
+
 		try {
 			Endereco endereco = new Endereco(rua, numero, bairro, cep, cidade, estado, pais);
 			cliente.setEndereco(endereco);
@@ -519,7 +519,7 @@ public class ClienteTest {
 	public void enderecoInvalidoBairroComCaracteresEspeciais() {
 
 		bairro = "@";
-		
+
 		try {
 			Endereco endereco = new Endereco(rua, numero, bairro, cep, cidade, estado, pais);
 			cliente.setEndereco(endereco);
@@ -705,9 +705,9 @@ public class ClienteTest {
 
 	@Test
 	public void enderecoInvalidoEstadoNulo() {
-		
+
 		estado = null;
-		
+
 		try {
 			Endereco endereco = new Endereco(rua, numero, bairro, cep, cidade, estado, pais);
 			cliente.setEndereco(endereco);
@@ -747,7 +747,7 @@ public class ClienteTest {
 
 	@Test
 	public void enderecoInvalidoEstadoComCaracteresEspeciais() {
-		
+
 		estado = "@";
 
 		try {
@@ -789,7 +789,7 @@ public class ClienteTest {
 
 	@Test
 	public void enderecoInvalidoPaisComEspacos() {
-		
+
 		pais = " ";
 
 		try {
@@ -825,5 +825,4 @@ public class ClienteTest {
 			assertEquals("Campos obrigatórios não devem ser nulos!", e.getMessage());
 		}
 	}
-
 }
