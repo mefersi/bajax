@@ -1,8 +1,0 @@
-br\com\jaque\banco\bajax\services\ClienteService.class
-br\com\jaque\banco\bajax\entities\Endereco.class
-br\com\jaque\banco\bajax\entities\ContaPoupanca.class
-br\com\jaque\banco\bajax\entities\Conta.class
-br\com\jaque\banco\bajax\entities\DadosInvalidosException.class
-br\com\jaque\banco\bajax\services\ContaService.class
-br\com\jaque\banco\bajax\entities\Cliente.class
-br\com\jaque\banco\bajax\entities\ContaCorrente.class
